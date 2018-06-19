@@ -1,9 +1,9 @@
-require 'test/spec'
+require_relative main
 
-context Testing on main main output do
-
-  specify 'should ' do
-
-    true.should == false
+RSpec.describe Main do
+  describe "#initialize" do
+    it "without any parameters" do
+      
+    end
   end
 end
