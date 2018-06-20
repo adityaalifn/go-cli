@@ -1,3 +1,4 @@
-class Main
+require_relative 'lib/application'
 
-end
+app = Application.new
+app.run

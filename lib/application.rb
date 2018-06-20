@@ -10,10 +10,34 @@ class Application
     @maps = Maps.new(map_size)
 
     @drivers = []
-    1.upto(5) do
-      @drivers << Driver.new(Random.rand(map_size+1), Random.rand(map_size+1))
+    1.upto(5) do |i|
+      @drivers << Driver.new(Random.rand(map_size+1), Random.rand(map_size+1), "Driver #{i}")
     end
 
     @user = User.new(user_x_coordinate, user_y_coordinate)
+  end
+
+  def run
+    while true
+      Gem.win_platform? ? (system "cls") : (system "clear")
+      puts "========== WELCOME TO GO-CLI MAIN MENU =========="
+      puts "1. Show Map"
+      puts "2. Order Go Ride"
+      puts "3. View History"
+      puts "4. Exit"
+      print("Select: ")
+      selected = gets.chomp
+
+      case selected
+      when "1"
+        @maps.show_map
+      when "2"
+
+      when "3"
+
+      when "4"
+        break
+      end
+    end
   end
 end
