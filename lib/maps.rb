@@ -7,8 +7,14 @@ class Maps
     @size = size
   end
 
-  def show_map
-    map_contents.each do |x|
+  def update_map(x, y, type)
+    # x, y is coordinate of people
+    # type consist of driver ("D") and user ("U")
+    @map_contents[x][y] = type
+  end
+
+  def show_map(user, drivers)
+    @map_contents.each do |x|
       print(*x)
       puts
     end
