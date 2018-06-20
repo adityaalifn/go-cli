@@ -2,10 +2,12 @@ require '../lib/order'
 require 'rspec'
 
 RSpec.describe Order do
-  describe "#find_driver" do
+  describe "#find_nearest_driver" do
     order = Order.new
-    it "return nearest driver position" do
-      driver = order.find_driver(1, 2)
+    driver = Driver.new
+    
+    it "return nearest driver position and the distance from user" do
+      driver = order.find_nearest_driver(2, 2)
     end
   end
   describe "#order_go_ride" do

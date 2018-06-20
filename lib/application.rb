@@ -14,11 +14,11 @@ class Application
     @user = User.new(user_x_coordinate, user_y_coordinate)
     @maps.update_map(user_x_coordinate,user_y_coordinate,"U")
     @drivers = []
-    1.upto(5) do |i|
-      x = Random.rand(map_size)
-      y = Random.rand(map_size)
-      @drivers << Driver.new(x, y, "Driver #{i}")
-      @maps.update_map(x,y,"D")
+    1.upto(5) do
+      driver = Driver.new
+      @drivers << driver
+      puts driver.x_coordinate
+      @maps.update_map(driver.x_coordinate, driver.y_coordinate, "D")
     end
   end
 
