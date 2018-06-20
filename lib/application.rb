@@ -2,6 +2,7 @@ require_relative 'maps'
 require_relative 'people'
 require_relative 'driver'
 require_relative 'user'
+require_relative 'order'
 
 class Application
   attr_reader :maps, :drivers, :user
@@ -23,7 +24,7 @@ class Application
 
   def run
     while true
-      # Gem.win_platform? ? (system "cls") : (system "clear")
+      Gem.win_platform? ? (system "cls") : (system "clear")
       puts "========== WELCOME TO GO-CLI MAIN MENU =========="
       puts "1. Show Map"
       puts "2. Order Go Ride"
@@ -35,7 +36,10 @@ class Application
       when "1"
         @maps.show_map(@user, @drivers)
       when "2"
-
+        print "Input your destination (x and y split by space): "
+        coordinate = gets.chomp.split(" ")
+        order = Order.instance
+        order.order_go_ride(@drivers, @user, coordinate[0].to_i, coordinate[1].to_i)
       when "3"
 
       when "4"
