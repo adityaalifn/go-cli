@@ -1,10 +1,9 @@
 class Maps
-  attr_reader :length, :width
+  attr_reader :size
   attr_accessor :map_contents
 
-  def initialize(length, width)
-    @map_contents = Array.new(width) { Array.new(length, 0)}
-    @length = length
-    @width = width
+  def initialize(size)
+    @map_contents = Array.new(size) { Array.new(size, 0)}
+    @size = size
   end
 end
