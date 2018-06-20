@@ -18,7 +18,7 @@ class Order
     puts "Your trip distance is #{trip_distance} unit of distance and your travel cost expenses are #{price}."
     print "Do you confirm to order? (y/n): "
     choice = gets.chomp
-    while not ["y","n"].include?(choice)
+    until ["y", "n"].include?(choice)
       puts "Invalid option."
       print "Do you confirm to order? (y/n): "
       choice = gets.chomp
