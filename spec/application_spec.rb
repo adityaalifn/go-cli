@@ -1,4 +1,5 @@
 require '../lib/application'
+require 'rspec'
 
 RSpec.describe Application do
   describe "#initialize" do
