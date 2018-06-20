@@ -3,7 +3,11 @@ require_relative 'people'
 require_relative 'driver'
 require_relative 'user'
 
+require 'singleton'
+
 class Application
+  include Singleton
+  
   attr_reader :maps, :drivers, :user
 
   def initialize(map_size=20, user_x_coordinate=Random.rand(20), user_y_coordinate=Random.rand(20))
