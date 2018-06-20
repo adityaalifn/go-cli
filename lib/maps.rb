@@ -19,4 +19,8 @@ class Maps
       puts
     end
   end
+
+  def is_map_size_valid?(x_dest, y_dest)
+    @size <= x_dest or @size <= y_dest ? true : false
+  end
 end

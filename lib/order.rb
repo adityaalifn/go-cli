@@ -8,7 +8,7 @@ class Order
     
   # end
 
-  def order_go_ride(drivers, user, x_dest, y_dest)
+  def order_go_ride(drivers, user, x_dest, y_dest, map)
     driver, driver_to_user_distance = find_nearest_driver(drivers, user)
     trip_distance = count_distance(x_dest, y_dest, user.x_coordinate, user.y_coordinate)
     price = count_price(user, trip_distance)
@@ -16,6 +16,21 @@ class Order
     puts "Your driver, #{driver.name}, is #{driver_to_user_distance} unit of distance away."
     puts
     puts "Your trip distance is #{trip_distance} unit of distance and your travel cost expenses are #{price}."
+    print "Do you confirm to order? (y/n): "
+    choice = gets.chomp
+    while not ["y","n"].include?(choice)
+      puts "Invalid option."
+      print "Do you confirm to order? (y/n): "
+      choice = gets.chomp
+    end
+
+    if choice == "y"
+      map.update_map(user.x_coordinate, user.y_coordinate, ".")
+      user.x_coordinate, user.y_coordinate = x_dest, y_dest
+      map.update_map(x_dest, y_dest, "U")
+    else
+      
+    end
   end
 
   private

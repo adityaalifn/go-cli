@@ -38,8 +38,14 @@ class Application
       when "2"
         print "Input your destination (x and y split by space): "
         coordinate = gets.chomp.split(" ")
+        while coordinate.length != 2 or @maps.is_map_size_valid?(coordinate[0].to_i, coordinate[1].to_i)
+        puts "Invalid input." if coordinate.length != 2
+        puts "Destination out of range." if @maps.is_map_size_valid?(coordinate[0].to_i, coordinate[1].to_i)
+          print "Input your destination (x and y split by space): "
+          coordinate = gets.chomp.split(" ")
+        end
         order = Order.instance
-        order.order_go_ride(@drivers, @user, coordinate[0].to_i, coordinate[1].to_i)
+        order.order_go_ride(@drivers, @user, coordinate[0].to_i, coordinate[1].to_i, @maps)
       when "3"
 
       when "4"
