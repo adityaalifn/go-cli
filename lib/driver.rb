@@ -1,10 +1,14 @@
 class Driver < People
+  "" "
+  Class for storing Driver attribute needed for this application.
+  " ""
+
   @@total = 0
   @@driver_name_list = ["Adimul", "Bento", "Paijo", "Sukirman", "Mbok Darmi", "Uvuvwevwevwe Onyetenvewve Ugwemubwem Ossas", "Jholeasuna Lapuslamarekanaujbck Ugwemubwem Osassla"].shuffle
   attr_reader :name
 
-  def initialize(x=Random.rand(Maps.size+1),y=Random.rand(Maps.size+1),name=nil)
-    super(x,y)
+  def initialize(x = Random.rand(Maps.size + 1), y = Random.rand(Maps.size + 1), name = nil)
+    super(x, y)
     @@total += 1
     @name = name
     @name = @@driver_name_list.shift if name.nil?
@@ -15,6 +19,9 @@ class Driver < People
   end
 
   def show_route(user, x_dest, y_dest)
+    "" "
+    Generate route based on current user's position towards the user's destination.
+    " ""
     turn = ""
     if user.y_coordinate < y_dest
       if user.x_coordinate < x_dest

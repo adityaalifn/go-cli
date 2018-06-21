@@ -5,19 +5,28 @@ require_relative 'user'
 require_relative 'order'
 
 class Application
+  "" "
+  Implementation of business processes in accordance with the requirements requested.
+  " ""
   attr_reader :user
   attr_accessor :drivers, :maps
 
-  def initialize(map_size=20, user_x_coordinate=Random.rand(20), user_y_coordinate=Random.rand(20))
+  def initialize(map_size = 20, user_x_coordinate = Random.rand(20), user_y_coordinate = Random.rand(20))
+    "" "
+    Initialize environment of GO-CLI program.
+    " ""
     @maps = Maps.new(map_size)
     @drivers = []
 
     # initialize user position
     @user = User.new(user_x_coordinate, user_y_coordinate)
-    @maps.update_map(user_x_coordinate,user_y_coordinate,"U")
+    @maps.update_map(user_x_coordinate, user_y_coordinate, "U")
   end
 
   def run
+    "" "
+    Run the main menu and ready to receiving user input.
+    " ""
     initialize_random_driver if @drivers.length == 0
     while true
       # Gem.win_platform? ? (system "cls") : (system "clear")
@@ -33,6 +42,7 @@ class Application
   end
 
   private
+
   def parse_menu(select)
     case select
     when "1"
@@ -72,6 +82,9 @@ class Application
   end
 
   def initialize_random_driver
+    "" "
+    This method used for the non file input command. So it will generate 5 random driver position and name.
+    " ""
     1.upto(5) do
       driver = Driver.new
       @drivers << driver

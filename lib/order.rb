@@ -2,11 +2,17 @@ require 'singleton'
 require_relative 'history_loader'
 
 class Order
+  "" "
+  Singleton Class to processing order requested by user. Can be only instantiated once.
+  " ""
   include Singleton
   UNIT_COST = 300
   @@order_history = []
 
   def order_go_ride(drivers, user, x_dest, y_dest, map)
+    "" "
+    Main function to serving order service for user.
+    " ""
     driver, driver_to_user_distance = find_nearest_driver(drivers, user)
     trip_distance = count_distance(x_dest, y_dest, user.x_coordinate, user.y_coordinate)
     if trip_distance == 0
@@ -34,15 +40,16 @@ class Order
       user.x_coordinate, user.y_coordinate = x_dest, y_dest
       map.update_map(x_dest, y_dest, "U")
 
-      temp_order = {driver_name:driver.name, route:route, price:price, datetime: Time.new.inspect}
+      temp_order = {driver_name: driver.name, route: route, price: price, datetime: Time.new.inspect}
       @@order_history << temp_order
       HistoryLoader.save_history(@@order_history)
     else
-      
+
     end
   end
 
   private
+
   def count_price(trip_distance)
     UNIT_COST * trip_distance
   end
