@@ -11,7 +11,7 @@ class Order
   def order_go_ride(drivers, user, x_dest, y_dest, map)
     driver, driver_to_user_distance = find_nearest_driver(drivers, user)
     trip_distance = count_distance(x_dest, y_dest, user.x_coordinate, user.y_coordinate)
-    price = count_price(user, trip_distance)
+    price = count_price(trip_distance)
     puts "Congratulations! We managed to find you a driver."
     puts "Your driver, #{driver.name}, is #{driver_to_user_distance} unit of distance away."
     puts
@@ -34,7 +34,7 @@ class Order
   end
 
   private
-  def count_price(user, trip_distance)
+  def count_price(trip_distance)
     UNIT_COST * trip_distance
   end
 
