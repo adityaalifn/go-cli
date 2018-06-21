@@ -58,12 +58,12 @@ class Order
   private
 
   def count_price(trip_distance)
-    """Single Responsibility Principle that only count the price."""
+    "" "Single Responsibility Principle that only count the price." ""
     UNIT_COST * trip_distance
   end
 
   def find_nearest_driver(drivers, user)
-    """Single Responsibility Principle that only return a driver and it's distance that nearest to the user."""
+    "" "Single Responsibility Principle that only return a driver and it's distance that nearest to the user." ""
     nearest = drivers[0]
     distance = count_distance(nearest.x_coordinate, nearest.y_coordinate, user.x_coordinate, user.y_coordinate)
 
@@ -79,7 +79,7 @@ class Order
   end
 
   def count_distance(x_user, y_user, x_driver, y_driver)
-    """Single Responsibility Principle that only count the distance between two point."""
+    "" "Single Responsibility Principle that only count the distance between two point." ""
     (x_driver - x_user).abs + (y_driver - y_user).abs
   end
 end

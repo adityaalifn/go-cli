@@ -67,7 +67,7 @@ File example can be found in [command.txt](command.txt).
 ## Assumption and Design Decision
 
 ### Design Decision
-* CLEAN CODE? (maybe) read the code like read a children's storybook
+* CLEAN CODE? (maybe) read the code like read a children's storybook :baby:
 * Understandable variable naming
 * As much as possible I use TDD but still confused
 * Implement SOLID Principle (not sure :sweat_smile:)

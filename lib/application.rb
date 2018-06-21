@@ -20,7 +20,6 @@ class Application
 
     # initialize user position
     @user = User.new(user_x_coordinate, user_y_coordinate)
-    @maps.update_map(user_x_coordinate, user_y_coordinate, "U")
   end
 
   def run
@@ -28,6 +27,7 @@ class Application
     Run the main menu and ready to receiving user input.
     " ""
     initialize_random_driver if @drivers.length == 0
+    @maps.update_map(user.x_coordinate, user.y_coordinate, "U")
     while true
       Gem.win_platform? ? (system "cls") : (system "clear")
       puts "========== WELCOME TO GO-CLI MAIN MENU =========="

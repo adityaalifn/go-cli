@@ -36,6 +36,8 @@ elsif input_array.length == 1
 elsif input_array.length == 3
   if input_array[0].to_i <= 0 or input_array[1].to_i <= 0 or input_array[2].to_i <= 0
     abort("Map size and coordinate must be number greater than zero.")
+  elsif input_array[0] < input_array[1] or input_array[0] < input_array[2]
+    abort("Map size must greater than user coordinate.")
   else
     app = Application.new(input_array[0].to_i, input_array[1].to_i, input_array[2].to_i)
   end
