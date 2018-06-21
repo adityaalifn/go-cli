@@ -31,7 +31,7 @@ class Application
       puts "3. View History"
       puts "4. Exit"
       print("Select: ")
-      selected = gets.chomp
+      selected = STDIN.gets.chomp
       parse_menu(selected)
     end
   end
@@ -43,7 +43,7 @@ class Application
       @maps.show_map(@user, @drivers)
     when "2"
       print "Input your destination (x and y split by space): "
-      coordinate = gets.chomp.split(" ").map {|i| i.to_i}
+      coordinate = STDIN.gets.chomp.split(" ").map {|i| i.to_i}
       coordinate = [0] if coordinate.empty?
       while coordinate.length != 2 or @maps.is_map_size_valid?(coordinate[0], coordinate[1]) or (coordinate[0] <= 0 or coordinate[1].to_i <= 0)
         puts "Invalid input." if coordinate.length != 2
@@ -51,7 +51,7 @@ class Application
         puts "Destination must be two number greater than zero." if coordinate[0] <= 0 or coordinate[1].to_i <= 0
 
         print "Input your destination (x and y split by space): "
-        coordinate = gets.chomp.split(" ").map {|i| i.to_i}
+        coordinate = STDIN.gets.chomp.split(" ").map {|i| i.to_i}
         coordinate = [0] if coordinate.empty?
       end
       order = Order.instance
@@ -72,6 +72,6 @@ class Application
       puts "Menu not available."
     end
     puts "Press enter key to continue..."
-    gets
+    STDIN.gets
   end
 end
