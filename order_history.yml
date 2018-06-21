@@ -26,3 +26,30 @@
   - finish at (1, 12)
   :price: 3300
   :datetime: '2018-06-21 09:51:07 +0700'
+- :driver_name: Sukirman
+  :route:
+  - start at (16, 0)
+  - go to (16, 1)
+  - turn left
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 4800
+  :datetime: '2018-06-21 12:01:11 +0700'
+- :driver_name: Paijo
+  :route:
+  - start at (1, 10)
+  - go to (1, 1)
+  - turn right
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 2700
+  :datetime: '2018-06-21 12:03:00 +0700'
+- :driver_name: 
+  :route:
+  - start at (13, 13)
+  - go to (13, 1)
+  - turn left
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 7200
+  :datetime: '2018-06-21 12:04:05 +0700'

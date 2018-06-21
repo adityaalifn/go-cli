@@ -5,24 +5,20 @@ require_relative 'user'
 require_relative 'order'
 
 class Application
-  attr_reader :maps, :drivers, :user
+  attr_reader :user
+  attr_accessor :drivers, :maps
 
   def initialize(map_size=20, user_x_coordinate=Random.rand(20), user_y_coordinate=Random.rand(20))
     @maps = Maps.new(map_size)
-
-    # initialize random driver position and user position
     @drivers = []
-    1.upto(5) do
-      driver = Driver.new
-      @drivers << driver
-      puts driver.x_coordinate
-      @maps.update_map(driver.x_coordinate, driver.y_coordinate, "D")
-    end
+
+    # initialize user position
     @user = User.new(user_x_coordinate, user_y_coordinate)
     @maps.update_map(user_x_coordinate,user_y_coordinate,"U")
   end
 
   def run
+    initialize_random_driver if @drivers.length == 0
     while true
       Gem.win_platform? ? (system "cls") : (system "clear")
       puts "========== WELCOME TO GO-CLI MAIN MENU =========="
@@ -73,5 +69,13 @@ class Application
     end
     puts "Press enter key to continue..."
     STDIN.gets
+  end
+
+  def initialize_random_driver
+    1.upto(5) do
+      driver = Driver.new
+      @drivers << driver
+      @maps.update_map(driver.x_coordinate, driver.y_coordinate, "D")
+    end
   end
 end

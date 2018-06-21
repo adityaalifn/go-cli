@@ -21,11 +21,12 @@ class Order
     puts route
     puts "Your trip distance is #{trip_distance} unit of distance and your travel cost expenses are #{price}."
     print "Do you confirm to order? (y/n): "
-    choice = gets.chomp
-    until ["y", "n"].include?(choice)
+    choice = STDIN.gets.chomp
+    until %w(y n).include?(choice)
       puts "Invalid option."
-      print "Do you confirm to order? (y/n): "
-      choice = gets.chomp
+      print("Do you confirm to order? (y/n): ")
+      choice = STDIN.gets.chomp
+      # break
     end
 
     if choice == "y"

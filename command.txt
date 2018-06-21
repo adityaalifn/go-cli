@@ -1,0 +1,6 @@
+create_map 20
+user_coordinate 13 13
+driver sukijan 12 12
+driver sukimin 14 14
+driver sumanto 11 11
+driver sisule 15 15

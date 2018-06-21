@@ -3,10 +3,10 @@ class Driver < People
   @@driver_name_list = ["Adimul", "Bento", "Paijo", "Sukirman", "Mbok Darmi", "Uvuvwevwevwe Onyetenvewve Ugwemubwem Ossas", "Jholeasuna Lapuslamarekanaujbck Ugwemubwem Osassla"].shuffle
   attr_reader :name
 
-  def initialize
-    super
+  def initialize(x=Random.rand(Maps.size+1),y=Random.rand(Maps.size+1),name=nil)
+    super(x,y)
     @@total += 1
-    @name = @@driver_name_list.shift
+    @name = @@driver_name_list.shift if name.nil?
   end
 
   def self.total
