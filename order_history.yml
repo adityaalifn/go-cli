@@ -71,3 +71,615 @@
   - finish at (1, 1)
   :price: 119400
   :datetime: '2018-06-21 14:08:16 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (13, 13)
+  - go to (13, 1)
+  - turn left
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 7200
+  :datetime: '2018-06-21 20:14:01 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (13, 13)
+  - go to (13, 1)
+  - turn left
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 7200
+  :datetime: '2018-06-21 20:14:49 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (13, 13)
+  - go to (13, 1)
+  - turn left
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 7200
+  :datetime: '2018-06-21 20:22:56 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (13, 13)
+  - go to (13, 1)
+  - turn left
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 7200
+  :datetime: '2018-06-21 20:22:56 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 1)
+  - go to (1, 20)
+  - turn right
+  - go to (20, 20)
+  - finish at (20, 20)
+  :price: 11400
+  :datetime: '2018-06-21 20:23:22 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (13, 13)
+  - go to (13, 1)
+  - turn left
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 7200
+  :datetime: '2018-06-21 20:22:56 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 1)
+  - go to (1, 20)
+  - turn right
+  - go to (20, 20)
+  - finish at (20, 20)
+  :price: 11400
+  :datetime: '2018-06-21 20:23:22 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (20, 20)
+  - go to (20, 2)
+  - turn left
+  - go to (1, 2)
+  - finish at (1, 2)
+  :price: 11100
+  :datetime: '2018-06-21 20:23:53 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (13, 13)
+  - go to (13, 1)
+  - turn left
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 7200
+  :datetime: '2018-06-21 20:22:56 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 1)
+  - go to (1, 20)
+  - turn right
+  - go to (20, 20)
+  - finish at (20, 20)
+  :price: 11400
+  :datetime: '2018-06-21 20:23:22 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (20, 20)
+  - go to (20, 2)
+  - turn left
+  - go to (1, 2)
+  - finish at (1, 2)
+  :price: 11100
+  :datetime: '2018-06-21 20:23:53 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 2)
+  - go to (1, 12)
+  - turn right
+  - go to (12, 12)
+  - finish at (12, 12)
+  :price: 6300
+  :datetime: '2018-06-21 20:24:04 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (13, 13)
+  - go to (13, 1)
+  - turn left
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 7200
+  :datetime: '2018-06-21 20:22:56 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 1)
+  - go to (1, 20)
+  - turn right
+  - go to (20, 20)
+  - finish at (20, 20)
+  :price: 11400
+  :datetime: '2018-06-21 20:23:22 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (20, 20)
+  - go to (20, 2)
+  - turn left
+  - go to (1, 2)
+  - finish at (1, 2)
+  :price: 11100
+  :datetime: '2018-06-21 20:23:53 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 2)
+  - go to (1, 12)
+  - turn right
+  - go to (12, 12)
+  - finish at (12, 12)
+  :price: 6300
+  :datetime: '2018-06-21 20:24:04 +0700'
+- :driver_name: sumanto
+  :route:
+  - start at (12, 12)
+  - go to (12, 2)
+  - turn left
+  - go to (1, 2)
+  - finish at (1, 2)
+  :price: 6300
+  :datetime: '2018-06-21 20:24:27 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (13, 13)
+  - go to (13, 1)
+  - turn left
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 7200
+  :datetime: '2018-06-21 20:22:56 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 1)
+  - go to (1, 20)
+  - turn right
+  - go to (20, 20)
+  - finish at (20, 20)
+  :price: 11400
+  :datetime: '2018-06-21 20:23:22 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (20, 20)
+  - go to (20, 2)
+  - turn left
+  - go to (1, 2)
+  - finish at (1, 2)
+  :price: 11100
+  :datetime: '2018-06-21 20:23:53 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 2)
+  - go to (1, 12)
+  - turn right
+  - go to (12, 12)
+  - finish at (12, 12)
+  :price: 6300
+  :datetime: '2018-06-21 20:24:04 +0700'
+- :driver_name: sumanto
+  :route:
+  - start at (12, 12)
+  - go to (12, 2)
+  - turn left
+  - go to (1, 2)
+  - finish at (1, 2)
+  :price: 6300
+  :datetime: '2018-06-21 20:24:27 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 2)
+  - go to (1, 1)
+  - turn right
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 300
+  :datetime: '2018-06-21 20:25:03 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (13, 13)
+  - go to (13, 1)
+  - turn left
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 7200
+  :datetime: '2018-06-21 20:22:56 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 1)
+  - go to (1, 20)
+  - turn right
+  - go to (20, 20)
+  - finish at (20, 20)
+  :price: 11400
+  :datetime: '2018-06-21 20:23:22 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (20, 20)
+  - go to (20, 2)
+  - turn left
+  - go to (1, 2)
+  - finish at (1, 2)
+  :price: 11100
+  :datetime: '2018-06-21 20:23:53 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 2)
+  - go to (1, 12)
+  - turn right
+  - go to (12, 12)
+  - finish at (12, 12)
+  :price: 6300
+  :datetime: '2018-06-21 20:24:04 +0700'
+- :driver_name: sumanto
+  :route:
+  - start at (12, 12)
+  - go to (12, 2)
+  - turn left
+  - go to (1, 2)
+  - finish at (1, 2)
+  :price: 6300
+  :datetime: '2018-06-21 20:24:27 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 2)
+  - go to (1, 1)
+  - turn right
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 300
+  :datetime: '2018-06-21 20:25:03 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 1)
+  - go to (1, 3)
+  - turn right
+  - go to (2, 3)
+  - finish at (2, 3)
+  :price: 900
+  :datetime: '2018-06-21 20:25:15 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (13, 13)
+  - go to (13, 1)
+  - turn left
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 7200
+  :datetime: '2018-06-21 20:22:56 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 1)
+  - go to (1, 20)
+  - turn right
+  - go to (20, 20)
+  - finish at (20, 20)
+  :price: 11400
+  :datetime: '2018-06-21 20:23:22 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (20, 20)
+  - go to (20, 2)
+  - turn left
+  - go to (1, 2)
+  - finish at (1, 2)
+  :price: 11100
+  :datetime: '2018-06-21 20:23:53 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 2)
+  - go to (1, 12)
+  - turn right
+  - go to (12, 12)
+  - finish at (12, 12)
+  :price: 6300
+  :datetime: '2018-06-21 20:24:04 +0700'
+- :driver_name: sumanto
+  :route:
+  - start at (12, 12)
+  - go to (12, 2)
+  - turn left
+  - go to (1, 2)
+  - finish at (1, 2)
+  :price: 6300
+  :datetime: '2018-06-21 20:24:27 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 2)
+  - go to (1, 1)
+  - turn right
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 300
+  :datetime: '2018-06-21 20:25:03 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 1)
+  - go to (1, 3)
+  - turn right
+  - go to (2, 3)
+  - finish at (2, 3)
+  :price: 900
+  :datetime: '2018-06-21 20:25:15 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (2, 3)
+  - go to (2, 20)
+  - turn right
+  - go to (20, 20)
+  - finish at (20, 20)
+  :price: 10500
+  :datetime: '2018-06-21 20:25:36 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (13, 13)
+  - go to (13, 1)
+  - turn left
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 7200
+  :datetime: '2018-06-21 20:22:56 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 1)
+  - go to (1, 20)
+  - turn right
+  - go to (20, 20)
+  - finish at (20, 20)
+  :price: 11400
+  :datetime: '2018-06-21 20:23:22 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (20, 20)
+  - go to (20, 2)
+  - turn left
+  - go to (1, 2)
+  - finish at (1, 2)
+  :price: 11100
+  :datetime: '2018-06-21 20:23:53 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 2)
+  - go to (1, 12)
+  - turn right
+  - go to (12, 12)
+  - finish at (12, 12)
+  :price: 6300
+  :datetime: '2018-06-21 20:24:04 +0700'
+- :driver_name: sumanto
+  :route:
+  - start at (12, 12)
+  - go to (12, 2)
+  - turn left
+  - go to (1, 2)
+  - finish at (1, 2)
+  :price: 6300
+  :datetime: '2018-06-21 20:24:27 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 2)
+  - go to (1, 1)
+  - turn right
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 300
+  :datetime: '2018-06-21 20:25:03 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 1)
+  - go to (1, 3)
+  - turn right
+  - go to (2, 3)
+  - finish at (2, 3)
+  :price: 900
+  :datetime: '2018-06-21 20:25:15 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (2, 3)
+  - go to (2, 20)
+  - turn right
+  - go to (20, 20)
+  - finish at (20, 20)
+  :price: 10500
+  :datetime: '2018-06-21 20:25:36 +0700'
+- :driver_name: sisule
+  :route:
+  - start at (20, 20)
+  - go to (20, 1)
+  - turn left
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 11400
+  :datetime: '2018-06-21 20:25:54 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (13, 13)
+  - go to (13, 1)
+  - turn left
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 7200
+  :datetime: '2018-06-21 20:22:56 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 1)
+  - go to (1, 20)
+  - turn right
+  - go to (20, 20)
+  - finish at (20, 20)
+  :price: 11400
+  :datetime: '2018-06-21 20:23:22 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (20, 20)
+  - go to (20, 2)
+  - turn left
+  - go to (1, 2)
+  - finish at (1, 2)
+  :price: 11100
+  :datetime: '2018-06-21 20:23:53 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 2)
+  - go to (1, 12)
+  - turn right
+  - go to (12, 12)
+  - finish at (12, 12)
+  :price: 6300
+  :datetime: '2018-06-21 20:24:04 +0700'
+- :driver_name: sumanto
+  :route:
+  - start at (12, 12)
+  - go to (12, 2)
+  - turn left
+  - go to (1, 2)
+  - finish at (1, 2)
+  :price: 6300
+  :datetime: '2018-06-21 20:24:27 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 2)
+  - go to (1, 1)
+  - turn right
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 300
+  :datetime: '2018-06-21 20:25:03 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 1)
+  - go to (1, 3)
+  - turn right
+  - go to (2, 3)
+  - finish at (2, 3)
+  :price: 900
+  :datetime: '2018-06-21 20:25:15 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (2, 3)
+  - go to (2, 20)
+  - turn right
+  - go to (20, 20)
+  - finish at (20, 20)
+  :price: 10500
+  :datetime: '2018-06-21 20:25:36 +0700'
+- :driver_name: sisule
+  :route:
+  - start at (20, 20)
+  - go to (20, 1)
+  - turn left
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 11400
+  :datetime: '2018-06-21 20:25:54 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 1)
+  - go to (1, 2)
+  - turn left
+  - go to (1, 2)
+  - finish at (1, 2)
+  :price: 300
+  :datetime: '2018-06-21 20:26:08 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (13, 13)
+  - go to (13, 1)
+  - turn left
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 7200
+  :datetime: '2018-06-21 20:22:56 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 1)
+  - go to (1, 20)
+  - turn right
+  - go to (20, 20)
+  - finish at (20, 20)
+  :price: 11400
+  :datetime: '2018-06-21 20:23:22 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (20, 20)
+  - go to (20, 2)
+  - turn left
+  - go to (1, 2)
+  - finish at (1, 2)
+  :price: 11100
+  :datetime: '2018-06-21 20:23:53 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 2)
+  - go to (1, 12)
+  - turn right
+  - go to (12, 12)
+  - finish at (12, 12)
+  :price: 6300
+  :datetime: '2018-06-21 20:24:04 +0700'
+- :driver_name: sumanto
+  :route:
+  - start at (12, 12)
+  - go to (12, 2)
+  - turn left
+  - go to (1, 2)
+  - finish at (1, 2)
+  :price: 6300
+  :datetime: '2018-06-21 20:24:27 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 2)
+  - go to (1, 1)
+  - turn right
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 300
+  :datetime: '2018-06-21 20:25:03 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 1)
+  - go to (1, 3)
+  - turn right
+  - go to (2, 3)
+  - finish at (2, 3)
+  :price: 900
+  :datetime: '2018-06-21 20:25:15 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (2, 3)
+  - go to (2, 20)
+  - turn right
+  - go to (20, 20)
+  - finish at (20, 20)
+  :price: 10500
+  :datetime: '2018-06-21 20:25:36 +0700'
+- :driver_name: sisule
+  :route:
+  - start at (20, 20)
+  - go to (20, 1)
+  - turn left
+  - go to (1, 1)
+  - finish at (1, 1)
+  :price: 11400
+  :datetime: '2018-06-21 20:25:54 +0700'
+- :driver_name: sukijan
+  :route:
+  - start at (1, 1)
+  - go to (1, 2)
+  - turn left
+  - go to (1, 2)
+  - finish at (1, 2)
+  :price: 300
+  :datetime: '2018-06-21 20:26:08 +0700'
+- :driver_name: sisule
+  :route:
+  - start at (1, 2)
+  - go to (1, 20)
+  - turn right
+  - go to (20, 20)
+  - finish at (20, 20)
+  :price: 11100
+  :datetime: '2018-06-21 20:26:33 +0700'

@@ -60,10 +60,35 @@ driver <name> <driver x coordinate> <driver y coordinate>
 
 File example can be found in [command.txt](command.txt).
 
-## Authors
+## Assumption and Design Decision
 
-* **Aditya Alif Nugraha** - *Exclusively for COMPFEST x GO-JEK* - [Aditya Alif Nugraha](https://adityaalifn.github.io)
+### Design Decision
+* CLEAN CODE? (maybe) read the code like read a children's storybook
+* Understandable variable naming
+* As much as possible I use TDD but still confused
+* Implement SOLID especially Single Responsibility Principle that makes the code DRY
+* Using Singleton Design Pattern to the Class that only instantiate once
+* Can handle user unexpected input
+* Follow [Ruby Style Guide](https://github.com/github/rubocop-github/blob/master/STYLEGUIDE.md)
+
+### Assumption
+* More than two user can be in the same coordinate and only one Driver shown in Map 
+* User and Driver can be having same coordinate and only the User shown in Map
+* Map class was rename into Maps to avoid same name as Ruby built-in function
+* Random driver name was randomly taken from name list
+* If there is more than one Driver that nearest to user, the last one compared Driver was taken
+* X coordinate represent horizontal axis
+* Y coordinate represent vertical axis
+* History will be saved as long as User not delete the "order_history.yml" file
+* After User confirming the order, User coordinate is changing to destination
+* After User confirming the order, Driver was randomly placed in Map
+* YAML format file was used to store order history because it can easily load and save the history
+* All of the input must be same format as requested. Otherwise it will display a informational message  
+
+
+## Authors
+**Aditya Alif Nugraha** - *Exclusively for COMPFEST x GO-JEK* - [Aditya Alif Nugraha](https://adityaalifn.github.io)
+
 
 ## License
-
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details

@@ -29,7 +29,7 @@ class Application
     " ""
     initialize_random_driver if @drivers.length == 0
     while true
-      # Gem.win_platform? ? (system "cls") : (system "clear")
+      Gem.win_platform? ? (system "cls") : (system "clear")
       puts "========== WELCOME TO GO-CLI MAIN MENU =========="
       puts "1. Show Map"
       puts "2. Order Go Ride"

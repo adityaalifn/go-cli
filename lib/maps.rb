@@ -25,6 +25,29 @@ class Maps
     end
   end
 
+  # def show_trip_map(user, x_dest, y_dest)
+  #   trip_map = Array.new(@@size) {Array.new(@@size, ".")}
+  #   trip_map[user.y_coordinate][user.x_coordinate] = "U"
+  #   trip_map[y_dest][y_dest] = "X"
+  #
+  #   if y_dest > user.y_coordinate
+  #     trip_map[(user.y_coordinate + 1)..y_dest][user.x_coordinate] = "|"
+  #   else
+  #     trip_map[(y_dest - 1)..user.y_coordinate][user.x_coordinate] = "|"
+  #   end
+  #
+  #   if x_dest > user.x_coordinate
+  #     trip_map[y_dest][(user.x_coordinate + 1)..x_dest] = "-"
+  #   else
+  #     trip_map[y_dest][(x_dest - 1)..user.x_coordinate] = "-"
+  #   end
+  #
+  #   trip_map.each do |x|
+  #     print(*x)
+  #     puts
+  #   end
+  # end
+
   def is_map_size_valid?(x_dest, y_dest)
     "" "
     Check whether user can go to the destination or not.
