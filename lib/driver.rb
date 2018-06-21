@@ -6,6 +6,7 @@ class Driver < People
   def initialize(x=Random.rand(Maps.size+1),y=Random.rand(Maps.size+1),name=nil)
     super(x,y)
     @@total += 1
+    @name = name
     @name = @@driver_name_list.shift if name.nil?
   end
 

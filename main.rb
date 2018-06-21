@@ -24,6 +24,7 @@ elsif input_array.length == 1
     driver = line.split
     abort("Invalid command input.") if driver[0] != "driver"
     abort("Driver coordinate must be number greater than zero.") if driver[2].to_i <= 0 and driver[3].to_i <= 0
+    puts driver[1]
     app.drivers << Driver.new(driver[2].to_i, driver[3].to_i, driver[1])
     app.maps.update_map(driver[2].to_i, driver[3].to_i, "D")
   end
