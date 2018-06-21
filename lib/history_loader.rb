@@ -3,7 +3,7 @@ require 'yaml'
 module HistoryLoader
   def HistoryLoader.save_history(order_list)
     begin
-      history = load_history()
+      history = load_history
     rescue
       history = []
     end
@@ -11,6 +11,10 @@ module HistoryLoader
   end
 
   def HistoryLoader.load_history
-    YAML.load_file("order_history.yml")
+    begin
+      YAML.load_file("order_history.yml")
+    rescue
+      []
+    end
   end
 end

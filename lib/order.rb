@@ -9,10 +9,16 @@ class Order
   def order_go_ride(drivers, user, x_dest, y_dest, map)
     driver, driver_to_user_distance = find_nearest_driver(drivers, user)
     trip_distance = count_distance(x_dest, y_dest, user.x_coordinate, user.y_coordinate)
+    if trip_distance == 0
+      puts "You are already there."
+      return
+    end
     price = count_price(trip_distance)
+    route = driver.show_route(user, x_dest, y_dest)
     puts "Congratulations! We managed to find you a driver."
     puts "Your driver, #{driver.name}, is #{driver_to_user_distance} unit of distance away."
     puts
+    puts route
     puts "Your trip distance is #{trip_distance} unit of distance and your travel cost expenses are #{price}."
     print "Do you confirm to order? (y/n): "
     choice = gets.chomp
@@ -27,7 +33,7 @@ class Order
       user.x_coordinate, user.y_coordinate = x_dest, y_dest
       map.update_map(x_dest, y_dest, "U")
 
-      temp_order = {driver_name:driver.name, price:price, datetime: Time.new.inspect}
+      temp_order = {driver_name:driver.name, route:route, price:price, datetime: Time.new.inspect}
       @@order_history << temp_order
       HistoryLoader.save_history(@@order_history)
     else

@@ -11,8 +11,6 @@ class Application
     @maps = Maps.new(map_size)
 
     # initialize random driver position and user position
-    @user = User.new(user_x_coordinate, user_y_coordinate)
-    @maps.update_map(user_x_coordinate,user_y_coordinate,"U")
     @drivers = []
     1.upto(5) do
       driver = Driver.new
@@ -20,6 +18,8 @@ class Application
       puts driver.x_coordinate
       @maps.update_map(driver.x_coordinate, driver.y_coordinate, "D")
     end
+    @user = User.new(user_x_coordinate, user_y_coordinate)
+    @maps.update_map(user_x_coordinate,user_y_coordinate,"U")
   end
 
   def run
@@ -44,6 +44,7 @@ class Application
     when "2"
       print "Input your destination (x and y split by space): "
       coordinate = gets.chomp.split(" ").map {|i| i.to_i}
+      coordinate = [0] if coordinate.empty?
       while coordinate.length != 2 or @maps.is_map_size_valid?(coordinate[0], coordinate[1]) or (coordinate[0] <= 0 or coordinate[1].to_i <= 0)
         puts "Invalid input." if coordinate.length != 2
         puts "Destination out of range." if @maps.is_map_size_valid?(coordinate[0], coordinate[1].to_i)
@@ -51,11 +52,20 @@ class Application
 
         print "Input your destination (x and y split by space): "
         coordinate = gets.chomp.split(" ").map {|i| i.to_i}
+        coordinate = [0] if coordinate.empty?
       end
       order = Order.instance
       order.order_go_ride(@drivers, @user, coordinate[0], coordinate[1], @maps)
-    when "3"
 
+    when "3"
+      order_history = HistoryLoader.load_history
+      order_history.each do |order|
+        puts "Order at #{order[:datetime]}"
+        puts "Driver Name : #{order[:driver_name]}"
+        puts "Route: ", order[:route]
+        puts "Price       : #{order[:price]}"
+        puts
+      end
     when "4"
       abort("Thanks for using GO-CLI!")
     else

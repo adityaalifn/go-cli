@@ -12,4 +12,23 @@ class Driver < People
   def self.total
     @@total
   end
+
+  def show_route(user, x_dest, y_dest)
+    turn = ""
+    if user.y_coordinate < y_dest
+      if user.x_coordinate < x_dest
+        turn = "right"
+      else
+        turn = "left"
+      end
+    else
+      if user.x_coordinate > x_dest
+        turn = "left"
+      else
+        turn = "right"
+      end
+    end
+
+    ["start at (#{user.x_coordinate}, #{user.y_coordinate})", "go to (#{user.x_coordinate}, #{y_dest})", "turn #{turn}", "go to (#{x_dest}, #{y_dest})", "finish at (#{x_dest}, #{y_dest})"]
+  end
 end
