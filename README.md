@@ -40,14 +40,20 @@ ruby main.rb
 The first parameter (let say n) would be the size of the map (n * n), the second and the third parameter (let say x and y) will be the coordinate of your user (x, y). And generate 5 drivers and put them randomly on the map.
 ```
 ruby main.rb <map size> <user x coordinate> <user y coordinate>
-Example: ruby main.rb 200 100 100
+```
+Example:
+```
+ruby main.rb 200 100 100
 ```
 
 ### By passing a filename as go-cli parameter
 This will generate a map with size as specified in the file, put your user in the coordinate as specified in the file, and put the number of drivers and their positions as specified in the file as well. You are free to decide the format of data in the file, but you have to be able to argue your choice of design of this data format.
 ```
 ruby main.rb <filename.txt>
-Example: ruby main.rb command.txt
+```
+Example:
+```
+ruby main.rb command.txt
 ```
 
 #### Command Format
@@ -62,7 +68,7 @@ driver <name> <driver x coordinate> <driver y coordinate>
 driver <name> <driver x coordinate> <driver y coordinate
 ```
 
-File example can be found in [command.txt](command.txt).
+Command file example can be found in [command.txt](command.txt).
 
 ## Assumption and Design Decision
 
@@ -77,7 +83,7 @@ File example can be found in [command.txt](command.txt).
 * Follow [Ruby Style Guide](https://github.com/github/rubocop-github/blob/master/STYLEGUIDE.md)
 
 ### Assumption
-* More than two user can be in the same coordinate and only one Driver shown in Map 
+* More than two Driver can be in the same coordinate and only one Driver shown in Map 
 * User and Driver can be having same coordinate and only the User shown in Map
 * Map class was rename into Maps to avoid same name as Ruby built-in function
 * Random driver name was randomly taken from name list
