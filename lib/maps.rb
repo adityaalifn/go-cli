@@ -20,7 +20,7 @@ class Maps
   end
 
   def is_map_size_valid?(x_dest, y_dest)
-    @@size < x_dest or @@size < y_dest ? true : false
+    @@size < x_dest.to_i or @@size < y_dest.to_i ? true : false
   end
 
   def self.size

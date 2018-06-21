@@ -1,6 +1,6 @@
 class Driver < People
   @@total = 0
-  @@driver_name_list = ["Adimul", "Bento", "Paijo", "Sukirman", "Mbok Darmi", "Uvuvwevwevwe Onyetenvewve Ugwemubwem Ossas", "Jholeasuna Lapuslamarekanaujbck Ugwemubwem Osassla"].shuffle!
+  @@driver_name_list = ["Adimul", "Bento", "Paijo", "Sukirman", "Mbok Darmi", "Uvuvwevwevwe Onyetenvewve Ugwemubwem Ossas", "Jholeasuna Lapuslamarekanaujbck Ugwemubwem Osassla"].shuffle
   attr_reader :name
 
   def initialize
