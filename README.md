@@ -70,7 +70,8 @@ File example can be found in [command.txt](command.txt).
 * CLEAN CODE? (maybe) read the code like read a children's storybook
 * Understandable variable naming
 * As much as possible I use TDD but still confused
-* Implement SOLID especially Single Responsibility Principle that makes the code DRY
+* Implement SOLID Principle (not sure :sweat_smile:)
+* Implement DRY Principle (not sure :sweat_smile:)
 * Using Singleton Design Pattern to the Class that only instantiate once
 * Can handle user unexpected input
 * Follow [Ruby Style Guide](https://github.com/github/rubocop-github/blob/master/STYLEGUIDE.md)
