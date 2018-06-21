@@ -56,6 +56,10 @@ Example: ruby main.rb command.txt
 create_map <map_size>
 user_coordinate <user x coordinate> <user y coordinate>
 driver <name> <driver x coordinate> <driver y coordinate>
+.
+.
+.
+driver <name> <driver x coordinate> <driver y coordinate
 ```
 
 File example can be found in [command.txt](command.txt).
