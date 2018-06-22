@@ -1,4 +1,7 @@
 # GO-CLI
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/057888725a1a4cd5b4cf946df7658baa)](https://app.codacy.com/app/adityaalifnugraha/go-cli?utm_source=github.com&utm_medium=referral&utm_content=adityaalifn/go-cli&utm_campaign=badger)
+
 SOFTWARE ENGINEERING ACADEMY COMPFEST X - GO-JEK SECOND STAGE FINAL ASSIGNMENT
 
 ## Getting Started
